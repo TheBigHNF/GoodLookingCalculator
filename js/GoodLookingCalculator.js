@@ -47,10 +47,13 @@ function calculate(event) {
         operationValue.value += clickedButtonValue;
         // clear everything on display
         inputValue.value = '';
-    } else if (clickedButtonValue === 'C') {
+    } else if (clickedButtonValue === 'A') {
         // clear everything on display
         inputValue.value = '';
         operationValue.value = '';
+    } else if (clickedButtonValue === 'C') {
+        // clear everything on display
+        inputValue.value = '';
     } else if (clickedButtonValue === 'd') {
         if (eval(inputValue.value) > 0) {
             inputValue.value = '-' + inputValue.value;
@@ -64,12 +67,18 @@ function calculate(event) {
     } else if (clickedButtonValue === '%') {
         if (inputValue.value.indexOf('%') >= 0) {
             inputValue.value = inputValue.value.slice(0, -1);
+        } else if (inputValue.value === '') {
+            inputValue.value += '0%';
         } else {
             inputValue.value += clickedButtonValue;
         }
     } else {
         if (inputValue.value.indexOf('%') >= 0) {
-            inputValue.value = inputValue.value.slice(0, -1) + clickedButtonValue + '%';
+            if (inputValue.value === '0%') {
+                inputValue.value = clickedButtonValue + '%';
+            } else {
+                inputValue.value = inputValue.value.slice(0, -1) + clickedButtonValue + '%';
+            }
         } else if (inputValue.value === '-0') {
             inputValue.value = '-' + clickedButtonValue;
         } else if (inputValue.value === '0') {

@@ -124,15 +124,26 @@ button:hover {
 /* operator style end */
 
 
-/* clear */
+/* All clear */
 
-.clear {
+.allclear {
     background-color: red;
     color: white;
 }
 
 
-/* clear style end */
+/* all clear style end */
+
+
+/* Clear */
+
+.clear {
+    background-color: pink;
+    color: white;
+}
+
+
+/* all clear style end */
 
 
 /* Decimal */
@@ -155,16 +166,6 @@ button:hover {
 
 
 /* percent style end */
-
-
-/* Zero */
-
-.zero {
-    width: 125px;
-}
-
-
-/* zero style end */
 
 
 /* Equals */
