@@ -1,0 +1,178 @@
+/* common styles */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222831;
+    font-family: sans-serif;
+}
+
+
+/* common styles end */
+
+
+/* banner */
+
+.banner {
+    width: 300px;
+    height: 80px;
+}
+
+
+/* calculator */
+
+.glc {
+    width: 300px;
+    padding-bottom: 15px;
+    border-radius: 7px;
+    background-color: #000;
+    box-shadow: 5px 8px 8px -2px rgba(0, 0, 0, 0.61);
+}
+
+
+/* calculator style end */
+
+
+/* Ooperation Display */
+
+.operationValue {
+    width: 100%;
+    height: 80px;
+    border: none;
+    box-sizing: border-box;
+    padding: 10px;
+    padding-bottom: 15px;
+    font-size: 2rem;
+    background-color: #00ff44;
+    color: #000;
+    text-align: right;
+}
+
+
+/* Operation Display style end */
+
+
+/* Input Display */
+
+.inputValue {
+    width: 100%;
+    height: 120px;
+    border: none;
+    box-sizing: border-box;
+    padding: 10px;
+    padding-bottom: 15px;
+    font-size: 2rem;
+    background-color: #00ff44;
+    color: #000;
+    text-align: right;
+}
+
+
+/* Input Display style end */
+
+
+/* row */
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* row style end */
+
+
+/* button */
+
+button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    background-color: #222;
+    color: white;
+    margin: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+/* button style end */
+
+
+/* operator */
+
+.operator {
+    background-color: yellowgreen;
+    color: black;
+}
+
+
+/* operator style end */
+
+
+/* clear */
+
+.clear {
+    background-color: red;
+    color: white;
+}
+
+
+/* clear style end */
+
+
+/* Decimal */
+
+.decimal {
+    background-color: #222;
+    color: white;
+}
+
+
+/* decimal style end */
+
+
+/* Percent */
+
+.percent {
+    background-color: #222;
+    color: white;
+}
+
+
+/* percent style end */
+
+
+/* Zero */
+
+.zero {
+    width: 125px;
+}
+
+
+/* zero style end */
+
+
+/* Equals */
+
+.equals {
+    background-color: green;
+    color: black;
+}
+
+
+/* equals style end */

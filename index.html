@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>GoodLooking Calculator</title>
+</head>
+
+<body>
+    <!-- GoodLooking Calculator-->
+    <div class="glc">
+        <a href="https://www.goodlooking.com"><img class="banner" src="images/GoodLooking+Logo+White.png " alt="GoodLooking"></a>
+        <!-- Shows the actual formula being calculated -->
+        <input type=" text" class="operationValue " disabled>
+        <!-- Shows what the user is inputting -->
+        <input type="text" class="inputValue " disabled>
+
+        <!-- The actual input pad -->
+        <div class="calcpad">
+            <!-- Top row -->
+            <div class="row">
+                <button value="C" class="clear">AC</button>
+                <button value="d" class="plusminus">&#x2213;</button>
+                <button value="%" class="percent">%</button>
+                <button value="/" class="operator">/</button>
+            </div>
+            <div class="row">
+                <button value="7" class="number">7</button>
+                <button value="8" class="number">8</button>
+                <button value="9" class="number">9</button>
+                <button value="*" class="operator">*</button>
+            </div>
+            <div class="row">
+                <button value="4" class="number">4</button>
+                <button value="5" class="number">5</button>
+                <button value="6" class="number">6</button>
+                <button value="-" class="operator">-</button>
+            </div>
+            <div class="row">
+                <button value="1" class="number">1</button>
+                <button value="2" class="number">2</button>
+                <button value="3" class="number">3</button>
+                <button value="+" class="operator">+</button>
+            </div>
+            <!-- Bottom row -->
+            <div class="row">
+                <button value="0" class="zero">0</button>
+                <button value="." class="decimal">.</button>
+                <button value="=" class=" equals">=</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript " src="js/GoodLookingCalculator.js"></script>
+</body>
+
+</html>
